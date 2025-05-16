@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Корпоративный шаблон</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-inner">
+                    <div class="logo">КорпТехно</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#portfolio">Портфолио</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section id="home">
+                <h1>Добро пожаловать в КорпТехно</h1>
+                <p>
+                    Мы предоставляем передовые технологические решения для
+                    бизнеса любого масштаба.
+                </p>
+
+                <!-- Слайдер -->
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <h2>Инновационные решения</h2>
+                        </div>
+                        <div class="slide">
+                            <h2>Профессиональная команда</h2>
+                        </div>
+                        <div class="slide">
+                            <h2>Индивидуальный подход</h2>
+                        </div>
+                    </div>
+                    <div class="slider-arrow slider-arrow-left">&lt;</div>
+                    <div class="slider-arrow slider-arrow-right">&gt;</div>
+                    <div class="slider-dots">
+                        <div class="slider-dot active"></div>
+                        <div class="slider-dot"></div>
+                        <div class="slider-dot"></div>
+                    </div>
+                </div>
+
+                <button class="btn" id="show-popup">Свяжитесь с нами</button>
+            </section>
+
+            <section id="about">
+                <h2>О нас</h2>
+                <p>
+                    КорпТехно – лидер в области корпоративных технологических
+                    решений с 2005 года.
+                </p>
+
+                <!-- Аккордеон -->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">Наша миссия</div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>
+                                    Наша миссия – предоставлять передовые
+                                    технологические решения, которые помогают
+                                    бизнесу расти и развиваться.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Наша команда</div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>
+                                    Наша команда состоит из опытных
+                                    профессионалов, каждый из которых имеет
+                                    многолетний опыт работы в своей области.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Наши ценности</div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>
+                                    Мы ценим качество, инновации, честность и
+                                    долгосрочные отношения с нашими клиентами.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services">
+                <h2>Наши услуги</h2>
+                <p>
+                    Мы предлагаем широкий спектр услуг для решения различных
+                    бизнес-задач.
+                </p>
+
+                <!-- Вкладки -->
+                <div class="tabs">
+                    <div class="tab-header">
+                        <button class="tab-btn active" data-tab="tab1">
+                            Разработка ПО
+                        </button>
+                        <button class="tab-btn" data-tab="tab2">
+                            ИТ-консалтинг
+                        </button>
+                        <button class="tab-btn" data-tab="tab3">
+                            Облачные решения
+                        </button>
+                    </div>
+                    <div class="tab-content active" id="tab1">
+                        <h3>Разработка программного обеспечения</h3>
+                        <p>
+                            Мы разрабатываем индивидуальные программные решения,
+                            которые помогают бизнесу автоматизировать процессы и
+                            повышать эффективность.
+                        </p>
+                        <p>
+                            Наши специалисты имеют опыт работы с различными
+                            технологиями и платформами.
+                        </p>
+                    </div>
+                    <div class="tab-content" id="tab2">
+                        <h3>ИТ-консалтинг</h3>
+                        <p>
+                            Мы помогаем бизнесу оптимизировать
+                            ИТ-инфраструктуру, повышать безопасность и внедрять
+                            новые технологии.
+                        </p>
+                        <p>
+                            Наши консультанты имеют глубокие знания в области
+                            информационных технологий и бизнес-процессов.
+                        </p>
+                    </div>
+                    <div class="tab-content" id="tab3">
+                        <h3>Облачные решения</h3>
+                        <p>
+                            Мы предлагаем облачные решения, которые помогают
+                            бизнесу снижать затраты на ИТ-инфраструктуру и
+                            повышать гибкость.
+                        </p>
+                        <p>
+                            Наши специалисты имеют опыт работы с различными
+                            облачными платформами и сервисами.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h2>Портфолио</h2>
+                <p>Ознакомьтесь с нашими последними проектами.</p>
+
+                <!-- Тултипы -->
+                <div
+                    style="
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                    ">
+                    <div class="tooltip">
+                        <img src="/api/placeholder/200/150" alt="Проект 1" />
+                        <span class="tooltip-text">
+                            Система управления для логистической компании
+                        </span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="/api/placeholder/200/150" alt="Проект 2" />
+                        <span class="tooltip-text">
+                            Мобильное приложение для банка
+                        </span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="/api/placeholder/200/150" alt="Проект 3" />
+                        <span class="tooltip-text">
+                            CRM-система для страховой компании
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>КорпТехно</h3>
+                        <p>
+                            Инновационные технологические решения для бизнеса.
+                        </p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li>Email: info@corptechno.ru</li>
+                            <li>Телефон: +7 (999) 123-45-67</li>
+                            <li>Адрес: г. Москва, ул. Пример, д. 1</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Навигация</h3>
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#portfolio">Портфолио</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 КорпТехно. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Попап -->
+        <div class="popup-overlay" id="popup-overlay">
+            <div class="popup">
+                <button class="popup-close">&times;</button>
+                <h2>Свяжитесь с нами</h2>
+                <p>Заполните форму, и мы свяжемся с вами в ближайшее время.</p>
+                <form id="popup-form">
+                    <div style="margin-bottom: 15px">
+                        <label
+                            for="popup-name"
+                            style="display: block; margin-bottom: 5px">
+                            Имя
+                        </label>
+                        <input
+                            type="text"
+                            id="popup-name"
+                            style="
+                                width: 100%;
+                                padding: 10px;
+                                border: 1px solid var(--medium-gray);
+                                border-radius: 4px;
+                            " />
+                    </div>
+                    <div style="margin-bottom: 15px">
+                        <label
+                            for="popup-email"
+                            style="display: block; margin-bottom: 5px">
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            id="popup-email"
+                            style="
+                                width: 100%;
+                                padding: 10px;
+                                border: 1px solid var(--medium-gray);
+                                border-radius: 4px;
+                            " />
+                    </div>
+                    <div style="margin-bottom: 15px">
+                        <label
+                            for="popup-phone"
+                            style="display: block; margin-bottom: 5px">
+                            Телефон
+                        </label>
+                        <input
+                            type="tel"
+                            id="popup-phone"
+                            style="
+                                width: 100%;
+                                padding: 10px;
+                                border: 1px solid var(--medium-gray);
+                                border-radius: 4px;
+                            " />
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
